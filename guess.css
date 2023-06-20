@@ -1,0 +1,94 @@
+/* <div class="container">
+<h2>You have 6 chances to guess the number</h2>
+<div class="input">
+<input type="text" id="num">
+<input type="submit" id="subt">
+</div>
+<div class="text">
+<p>Previous guesses: <span id="previous"></span></p>
+<p>Remaining guesses: <span id="rem">6</span></p>
+<p id="para"></p>
+</div>
+</div> */
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        background-color: bisque;
+        height: 500px;
+        width: 600px;
+        margin: auto;
+    }
+    h2{
+        text-align: center;
+    }
+    .input{
+        width: 300px;
+        height: 200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .input #num{
+        height: 50px;
+        width: 200px;
+    }
+    .input #subt{
+        height: 50px;
+        width: 100px;
+        margin-top: 10px;
+    }
+    .text{
+   
+        width: 500px;
+        height: 200px;
+        font-size: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text p:nth-child(1){
+        margin: 0px 50px;
+    }
+    .text p:nth-child(2){
+        margin: 20px 50px 10px 50px;
+    }
+    #cor{
+        margin:0px 50px;
+        display: none;
+    }
+    #correct{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .text #para{
+        margin: auto;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .text #restart{
+        margin: auto;
+        width: 200px;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 30px;
+        font-family: cursive;
+        font-weight: bold;
+        border: 2px solid blue;
+        display: none;
+        cursor: pointer;
+    }
+    #restart:hover{
+        background-color: blue;
+        color: white;
+    }
+
+   
